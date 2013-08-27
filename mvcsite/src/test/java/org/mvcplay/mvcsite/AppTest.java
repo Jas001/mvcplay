@@ -1,6 +1,6 @@
 package org.mvcplay.mvcsite;
 
-import static org.junit.Assert.*;
+
 import static org.mockito.Mockito.*;
 
 import org.junit.Test;
@@ -14,6 +14,7 @@ public class AppTest {
 		
 		MainController mainController = mock(MainController.class);
 		
+		//call program.
 		app.startApplication(mainController);
 		
 		verify(mainController).setView(isA(MainView.class));
