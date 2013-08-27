@@ -16,10 +16,9 @@ public class AppTest {
 		
 		app.startApplication(mainController);
 		
-		//verifyNoMoreInteractions(mainController);
 		verify(mainController).setView(isA(MainView.class));
 		verify(mainController).takeControl();
-		app.startApplication(mainController);
+		verifyNoMoreInteractions(mainController);
 	}
 
 
