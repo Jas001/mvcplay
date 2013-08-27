@@ -17,6 +17,7 @@ public class AppTest {
 		//call program.
 		app.startApplication(mainController);
 		
+		//verifies.
 		verify(mainController).setView(isA(MainView.class));
 		verify(mainController).takeControl();
 		verifyNoMoreInteractions(mainController);
